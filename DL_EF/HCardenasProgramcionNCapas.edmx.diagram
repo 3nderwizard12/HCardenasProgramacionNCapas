@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f77a78e4683f4cbbb63cbc7045bd6f58" Name="Diagram1">
+        <EntityTypeShape EntityType="HCardenasProgramcionNCapasModel.Role" Width="1.5" PointX="0.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HCardenasProgramcionNCapasModel.User" Width="1.5" PointX="3" PointY="0.875" />
+        <AssociationConnector Association="HCardenasProgramcionNCapasModel.FK_User" />
+        <EntityTypeShape EntityType="HCardenasProgramcionNCapasModel.Usuario" Width="1.5" PointX="3" PointY="6.125" />
+        <AssociationConnector Association="HCardenasProgramcionNCapasModel.FK_Usuario" />
+        <EntityTypeShape EntityType="HCardenasProgramcionNCapasModel.Aseguradora" Width="1.5" PointX="5.25" PointY="7.125" />
+        <AssociationConnector Association="HCardenasProgramcionNCapasModel.FK_Aseguradora" />
+        <EntityTypeShape EntityType="HCardenasProgramcionNCapasModel.Colonia" Width="1.5" PointX="12.125" PointY="1.125" />
+        <EntityTypeShape EntityType="HCardenasProgramcionNCapasModel.Direccion" Width="1.5" PointX="14.375" PointY="4.5" />
+        <EntityTypeShape EntityType="HCardenasProgramcionNCapasModel.Estado" Width="1.5" PointX="7.625" PointY="1.25" />
+        <EntityTypeShape EntityType="HCardenasProgramcionNCapasModel.Municipio" Width="1.5" PointX="9.875" PointY="1.25" />
+        <EntityTypeShape EntityType="HCardenasProgramcionNCapasModel.Pai" Width="1.5" PointX="5.375" PointY="1.375" />
+        <AssociationConnector Association="HCardenasProgramcionNCapasModel.FK_Colonia" />
+        <AssociationConnector Association="HCardenasProgramcionNCapasModel.FK_DireccionColonia" />
+        <AssociationConnector Association="HCardenasProgramcionNCapasModel.FK_DireccionUsuario" />
+        <AssociationConnector Association="HCardenasProgramcionNCapasModel.FK_Estado" />
+        <AssociationConnector Association="HCardenasProgramcionNCapasModel.FK_Municipio" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,157 @@
+﻿@model ML.User
+@{
+    ViewBag.Title = "Form";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Form de usuarios</h2>
+
+<div class="row">
+
+    <div class="col-md-12">
+        @using (Html.BeginForm("Form", "User", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            <div class="col">
+                @Html.LabelFor(model => model.IdUser, new { @class = "visually-hidden" })
+
+                @Html.TextBoxFor(model => model.IdUser, new { @class = "visually-hidden form-control" })
+
+                @Html.ValidationMessageFor(model => model.IdUser)
+
+            </div>
+            <div class="row">
+
+                <div class="col">
+                    @Html.LabelFor(model => model.FirstName)
+
+                    @Html.TextBoxFor(model => model.FirstName, new { @class = "form-control", @id = "txtNombre" })
+
+                    @Html.ValidationMessageFor(model => model.FirstName)
+                </div>
+
+                <div class="col">
+                    @Html.LabelFor(model => model.LastName)
+
+                    @Html.TextBoxFor(model => model.LastName, new { @class = "form-control", @id = "txtNombre" })
+
+                    @Html.ValidationMessageFor(model => model.LastName)
+                </div>
+
+                <div class="col">
+                    @Html.LabelFor(model => model.MotherLastName)
+
+                    @Html.TextBoxFor(model => model.MotherLastName, new { @class = "form-control", @id = "txtNombre" })
+
+                    @Html.ValidationMessageFor(model => model.MotherLastName)
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col">
+                    @Html.LabelFor(model => model.Email)
+
+                    @Html.TextBoxFor(model => model.Email, new { @class = "form-control", @id = "txtNombre" })
+
+                    @Html.ValidationMessageFor(model => model.Email)
+                </div>
+
+                <div class="col">
+                    @Html.LabelFor(model => model.Password)
+
+                    @Html.TextBoxFor(model => model.Password, new { @class = "form-control", @id = "txtNombre" })
+
+                    @Html.ValidationMessageFor(model => model.Password)
+                </div>
+
+                <div class="col">
+                    @Html.LabelFor(model => model.PhoneNumber)
+
+                    @Html.TextBoxFor(model => model.PhoneNumber, new { @class = "form-control", @id = "txtNombre" })
+
+                    @Html.ValidationMessageFor(model => model.PhoneNumber)
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col">
+                    @Html.LabelFor(model => model.PotalCode)
+
+                    @Html.TextBoxFor(model => model.PotalCode, new { @class = "form-control", @id = "txtNombre" })
+
+                    @Html.ValidationMessageFor(model => model.PotalCode)
+                </div>
+
+                <div class="col">
+                    @Html.LabelFor(model => model.UserName)
+
+                    @Html.TextBoxFor(model => model.UserName, new { @class = "form-control", @id = "txtNombre" })
+
+                    @Html.ValidationMessageFor(model => model.UserName)
+                </div>
+
+                <div class="col">
+                    @Html.LabelFor(model => model.Birthday)
+
+                    @Html.TextBoxFor(model => model.Birthday, new { @class = "form-control", @id = "txtNombre" })
+
+                    @Html.ValidationMessageFor(model => model.Birthday)
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col">
+                    @Html.LabelFor(model => model.Gender)
+
+                    @Html.TextBoxFor(model => model.Gender, new { @class = "form-control", @id = "txtNombre" })
+
+                    @Html.ValidationMessageFor(model => model.Gender)
+                </div>
+
+                <div class="col">
+                    @Html.LabelFor(model => model.MobileNumber)
+
+                    @Html.TextBoxFor(model => model.MobileNumber, new { @class = "form-control", @id = "txtNombre" })
+
+                    @Html.ValidationMessageFor(model => model.MobileNumber)
+                </div>
+
+                <div class="col">
+                    @Html.LabelFor(model => model.CURP)
+
+                    @Html.TextBoxFor(model => model.CURP, new { @class = "form-control", @id = "txtNombre" })
+
+                    @Html.ValidationMessageFor(model => model.CURP)
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col">
+                    @Html.LabelFor(model => model.Image)
+
+                    @Html.TextBoxFor(model => model.Image, new { @class = "form-control", @id = "txtNombre" })
+
+                    @Html.ValidationMessageFor(model => model.Image)
+                </div>
+
+                <div class="col">
+                    @Html.LabelFor(model => model.Role.IdRole)
+
+                    @Html.TextBoxFor(model => model.Role.IdRole, new { @class = "form-control", @id = "txtNombre" })
+
+                    @Html.ValidationMessageFor(model => model.Role.IdRole)
+                </div>
+
+                <div class="col">
+                    <input type="submit" value="Guardar" class="btn btn-success" />
+
+                    @Html.ActionLink("Regresar", "GetAll", "Alumno", htmlAttributes: new { @class = "btn btn-danger" })
+                </div>
+            </div>
+        }
+    </div>
+
+</div>

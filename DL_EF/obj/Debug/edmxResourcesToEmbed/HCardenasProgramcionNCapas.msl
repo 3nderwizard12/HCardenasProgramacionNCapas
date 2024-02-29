@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="HCardenasProgramcionNCapasModelStoreContainer" CdmEntityContainer="HCardenasProgramcionNCapasEntities">
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="HCardenasProgramcionNCapasModel.Role">
+        <MappingFragment StoreEntitySet="Role">
+          <ScalarProperty Name="IdRole" ColumnName="IdRole" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="HCardenasProgramcionNCapasModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="IdRole" ColumnName="IdRole" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="CURP" ColumnName="CURP" />
+          <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Birthday" ColumnName="Birthday" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="MotherLastName" ColumnName="MotherLastName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="IdUser" ColumnName="IdUser" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="UserAdd" FunctionName="HCardenasProgramcionNCapasModel.Store.UserAdd" />
+    <FunctionImportMapping FunctionImportName="UserById" FunctionName="HCardenasProgramcionNCapasModel.Store.UserById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HCardenasProgramcionNCapasModel.UserById_Result">
+          <ScalarProperty Name="IdUser" ColumnName="IdUser" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="MotherLastName" ColumnName="MotherLastName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Birthday" ColumnName="Birthday" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+          <ScalarProperty Name="CURP" ColumnName="CURP" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="IdRole" ColumnName="IdRole" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="UserDelete" FunctionName="HCardenasProgramcionNCapasModel.Store.UserDelete" />
+    <FunctionImportMapping FunctionImportName="UserGetAll" FunctionName="HCardenasProgramcionNCapasModel.Store.UserGetAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HCardenasProgramcionNCapasModel.UserGetAll_Result">
+          <ScalarProperty Name="IdUser" ColumnName="IdUser" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="MotherLastName" ColumnName="MotherLastName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Birthday" ColumnName="Birthday" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+          <ScalarProperty Name="CURP" ColumnName="CURP" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="IdRole" ColumnName="IdRole" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="UserUpdate" FunctionName="HCardenasProgramcionNCapasModel.Store.UserUpdate" />
+    <EntitySetMapping Name="Usuarios">
+      <EntityTypeMapping TypeName="HCardenasProgramcionNCapasModel.Usuario">
+        <MappingFragment StoreEntitySet="Usuario">
+          <ScalarProperty Name="IdRole" ColumnName="IdRole" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="CURP" ColumnName="CURP" />
+          <ScalarProperty Name="FechaNacimiento" ColumnName="FechaNacimiento" />
+          <ScalarProperty Name="Celular" ColumnName="Celular" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Sexo" ColumnName="Sexo" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="ApellidoMaterno" ColumnName="ApellidoMaterno" />
+          <ScalarProperty Name="ApellidoPaterno" ColumnName="ApellidoPaterno" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="RoleGetAll" FunctionName="HCardenasProgramcionNCapasModel.Store.RoleGetAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HCardenasProgramcionNCapasModel.RoleGetAll_Result">
+          <ScalarProperty Name="IdRole" ColumnName="IdRole" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="Aseguradoras">
+      <EntityTypeMapping TypeName="HCardenasProgramcionNCapasModel.Aseguradora">
+        <MappingFragment StoreEntitySet="Aseguradora">
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="IdAseguradora" ColumnName="IdAseguradora" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="AseguradoraAdd" FunctionName="HCardenasProgramcionNCapasModel.Store.AseguradoraAdd" />
+    <FunctionImportMapping FunctionImportName="AseguradoraDelete" FunctionName="HCardenasProgramcionNCapasModel.Store.AseguradoraDelete" />
+    <FunctionImportMapping FunctionImportName="AseguradoraById" FunctionName="HCardenasProgramcionNCapasModel.Store.AseguradoraById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HCardenasProgramcionNCapasModel.AseguradoraById_Result">
+          <ScalarProperty Name="IdAseguradora" ColumnName="IdAseguradora" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+          <ScalarProperty Name="NombreUsuario" ColumnName="NombreUsuario" />
+          <ScalarProperty Name="ApellidoPaterno" ColumnName="ApellidoPaterno" />
+          <ScalarProperty Name="ApellidoMaterno" ColumnName="ApellidoMaterno" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="AseguradoraGetAll" FunctionName="HCardenasProgramcionNCapasModel.Store.AseguradoraGetAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HCardenasProgramcionNCapasModel.AseguradoraGetAll_Result">
+          <ScalarProperty Name="IdAseguradora" ColumnName="IdAseguradora" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+          <ScalarProperty Name="NombreUsuario" ColumnName="NombreUsuario" />
+          <ScalarProperty Name="ApellidoPaterno" ColumnName="ApellidoPaterno" />
+          <ScalarProperty Name="ApellidoMaterno" ColumnName="ApellidoMaterno" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="AseguradoraUpdate" FunctionName="HCardenasProgramcionNCapasModel.Store.AseguradoraUpdate" />
+    <EntitySetMapping Name="Colonias">
+      <EntityTypeMapping TypeName="HCardenasProgramcionNCapasModel.Colonia">
+        <MappingFragment StoreEntitySet="Colonia">
+          <ScalarProperty Name="IdMunicipio" ColumnName="IdMunicipio" />
+          <ScalarProperty Name="CodigoPostal" ColumnName="CodigoPostal" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="IdColonia" ColumnName="IdColonia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Direccions">
+      <EntityTypeMapping TypeName="HCardenasProgramcionNCapasModel.Direccion">
+        <MappingFragment StoreEntitySet="Direccion">
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+          <ScalarProperty Name="IdColonia" ColumnName="IdColonia" />
+          <ScalarProperty Name="Numeroexterior" ColumnName="Numeroexterior" />
+          <ScalarProperty Name="NumeroInterios" ColumnName="NumeroInterios" />
+          <ScalarProperty Name="Calle" ColumnName="Calle" />
+          <ScalarProperty Name="IdDireccion" ColumnName="IdDireccion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Estadoes">
+      <EntityTypeMapping TypeName="HCardenasProgramcionNCapasModel.Estado">
+        <MappingFragment StoreEntitySet="Estado">
+          <ScalarProperty Name="IdPais" ColumnName="IdPais" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Municipios">
+      <EntityTypeMapping TypeName="HCardenasProgramcionNCapasModel.Municipio">
+        <MappingFragment StoreEntitySet="Municipio">
+          <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="IdMunicipio" ColumnName="IdMunicipio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pais">
+      <EntityTypeMapping TypeName="HCardenasProgramcionNCapasModel.Pai">
+        <MappingFragment StoreEntitySet="Pais">
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="IdPais" ColumnName="IdPais" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="ColoniaGetAll" FunctionName="HCardenasProgramcionNCapasModel.Store.ColoniaGetAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HCardenasProgramcionNCapasModel.ColoniaGetAll_Result">
+          <ScalarProperty Name="IdColonia" ColumnName="IdColonia" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="CodigoPostal" ColumnName="CodigoPostal" />
+          <ScalarProperty Name="IdMunicipio" ColumnName="IdMunicipio" />
+          <ScalarProperty Name="NombreMunicipio" ColumnName="NombreMunicipio" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="DireccionGetAll" FunctionName="HCardenasProgramcionNCapasModel.Store.DireccionGetAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HCardenasProgramcionNCapasModel.DireccionGetAll_Result">
+          <ScalarProperty Name="IdDireccion" ColumnName="IdDireccion" />
+          <ScalarProperty Name="Calle" ColumnName="Calle" />
+          <ScalarProperty Name="NumeroInterios" ColumnName="NumeroInterios" />
+          <ScalarProperty Name="Numeroexterior" ColumnName="Numeroexterior" />
+          <ScalarProperty Name="IdColonia" ColumnName="IdColonia" />
+          <ScalarProperty Name="NombreColonia" ColumnName="NombreColonia" />
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+          <ScalarProperty Name="NombreUsuario" ColumnName="NombreUsuario" />
+          <ScalarProperty Name="ApellidoPaterno" ColumnName="ApellidoPaterno" />
+          <ScalarProperty Name="ApellidoMaterno" ColumnName="ApellidoMaterno" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="EstadoGetAll" FunctionName="HCardenasProgramcionNCapasModel.Store.EstadoGetAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HCardenasProgramcionNCapasModel.EstadoGetAll_Result">
+          <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="IdPais" ColumnName="IdPais" />
+          <ScalarProperty Name="NombrePais" ColumnName="NombrePais" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="MunicipioGetAll" FunctionName="HCardenasProgramcionNCapasModel.Store.MunicipioGetAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HCardenasProgramcionNCapasModel.MunicipioGetAll_Result">
+          <ScalarProperty Name="IdMunicipio" ColumnName="IdMunicipio" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
+          <ScalarProperty Name="NombreEstado" ColumnName="NombreEstado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="PaisGetAll" FunctionName="HCardenasProgramcionNCapasModel.Store.PaisGetAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HCardenasProgramcionNCapasModel.PaisGetAll_Result">
+          <ScalarProperty Name="IdPais" ColumnName="IdPais" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="PaisGetById" FunctionName="HCardenasProgramcionNCapasModel.Store.PaisGetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HCardenasProgramcionNCapasModel.PaisGetById_Result">
+          <ScalarProperty Name="IdPais" ColumnName="IdPais" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="EstadoGetById" FunctionName="HCardenasProgramcionNCapasModel.Store.EstadoGetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HCardenasProgramcionNCapasModel.EstadoGetById_Result">
+          <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="IdPais" ColumnName="IdPais" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="MunicipioGetById" FunctionName="HCardenasProgramcionNCapasModel.Store.MunicipioGetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HCardenasProgramcionNCapasModel.MunicipioGetById_Result">
+          <ScalarProperty Name="IdMunicipio" ColumnName="IdMunicipio" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ColoniaGetById" FunctionName="HCardenasProgramcionNCapasModel.Store.ColoniaGetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HCardenasProgramcionNCapasModel.ColoniaGetById_Result">
+          <ScalarProperty Name="IdColonia" ColumnName="IdColonia" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="CodigoPostal" ColumnName="CodigoPostal" />
+          <ScalarProperty Name="IdMunicipio" ColumnName="IdMunicipio" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="UsuarioAdd" FunctionName="HCardenasProgramcionNCapasModel.Store.UsuarioAdd" />
+    <FunctionImportMapping FunctionImportName="UsuarioGetAll" FunctionName="HCardenasProgramcionNCapasModel.Store.UsuarioGetAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HCardenasProgramcionNCapasModel.UsuarioGetAll_Result">
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="ApellidoPaterno" ColumnName="ApellidoPaterno" />
+          <ScalarProperty Name="ApellidoMaterno" ColumnName="ApellidoMaterno" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Sexo" ColumnName="Sexo" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Celular" ColumnName="Celular" />
+          <ScalarProperty Name="FechaNacimiento" ColumnName="FechaNacimiento" />
+          <ScalarProperty Name="CURP" ColumnName="CURP" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="IdRole" ColumnName="IdRole" />
+          <ScalarProperty Name="NombreRole" ColumnName="NombreRole" />
+          <ScalarProperty Name="Calle" ColumnName="Calle" />
+          <ScalarProperty Name="NombreColonia" ColumnName="NombreColonia" />
+          <ScalarProperty Name="NombreMunicipio" ColumnName="NombreMunicipio" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="UsuarioDelete" FunctionName="HCardenasProgramcionNCapasModel.Store.UsuarioDelete" />
+    <FunctionImportMapping FunctionImportName="UsuarioById" FunctionName="HCardenasProgramcionNCapasModel.Store.UsuarioById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HCardenasProgramcionNCapasModel.UsuarioById_Result">
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="ApellidoPaterno" ColumnName="ApellidoPaterno" />
+          <ScalarProperty Name="ApellidoMaterno" ColumnName="ApellidoMaterno" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Sexo" ColumnName="Sexo" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Celular" ColumnName="Celular" />
+          <ScalarProperty Name="FechaNacimiento" ColumnName="FechaNacimiento" />
+          <ScalarProperty Name="CURP" ColumnName="CURP" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="IdRole" ColumnName="IdRole" />
+          <ScalarProperty Name="NombreRole" ColumnName="NombreRole" />
+          <ScalarProperty Name="IdColonia" ColumnName="IdColonia" />
+          <ScalarProperty Name="Calle" ColumnName="Calle" />
+          <ScalarProperty Name="NumeroInterios" ColumnName="NumeroInterios" />
+          <ScalarProperty Name="Numeroexterior" ColumnName="Numeroexterior" />
+          <ScalarProperty Name="NombreColonia" ColumnName="NombreColonia" />
+          <ScalarProperty Name="IdMunicipio" ColumnName="IdMunicipio" />
+          <ScalarProperty Name="NombreMunicipio" ColumnName="NombreMunicipio" />
+          <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
+          <ScalarProperty Name="NombreEstado" ColumnName="NombreEstado" />
+          <ScalarProperty Name="IdPais" ColumnName="IdPais" />
+          <ScalarProperty Name="NombrePais" ColumnName="NombrePais" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="DireccionGetById" FunctionName="HCardenasProgramcionNCapasModel.Store.DireccionGetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HCardenasProgramcionNCapasModel.DireccionGetById_Result">
+          <ScalarProperty Name="IdDireccion" ColumnName="IdDireccion" />
+          <ScalarProperty Name="Calle" ColumnName="Calle" />
+          <ScalarProperty Name="NumeroInterios" ColumnName="NumeroInterios" />
+          <ScalarProperty Name="NumeroExterior" ColumnName="NumeroExterior" />
+          <ScalarProperty Name="IdColonia" ColumnName="IdColonia" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="UsuarioUpdate" FunctionName="HCardenasProgramcionNCapasModel.Store.UsuarioUpdate" />
+  </EntityContainerMapping>
+</Mapping>
